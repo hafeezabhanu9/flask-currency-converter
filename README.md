@@ -40,6 +40,7 @@ This is a simple Flask-based web application for converting currencies using the
 4. **Run the Application**:
 
 - **Start the Flask application**:
+  
   ```bash
   python app.py
   ```
@@ -49,11 +50,13 @@ This is a simple Flask-based web application for converting currencies using the
 
 - Build the Docker image:
 - **In the project directory, run**:
+  
   ```bash
   docker build -t flask-currency-converter .
   ```
 - Run the Docker container
 - **Execute the following command to run the container**:
+  
   ```bash
   docker run -d -p 5000:5000 flask-currency-converter
   ```
@@ -119,7 +122,7 @@ flask-currency-converter/
 └── README.md           # Project documentation
 
 ## Author
-Hafeeza Bhanu Mohmmad
+**Hafeeza Bhanu Mohmmad**
 
 ### Acknowledgements
 - ExchangeRate-API: For providing the currency conversion service.
