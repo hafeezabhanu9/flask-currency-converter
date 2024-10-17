@@ -28,23 +28,35 @@ This is a simple Flask-based web application for converting currencies using the
 
 2. **Install required dependencies**:
 
-- **If running locally, create a virtual environment and install Flask**: pip install Flask requests
-
+- **If running locally, create a virtual environment and install Flask**:
+  
+  ```bash
+   pip install Flask requests
+  ```
 3. **Environment Variables**:
 
 - You may want to create a .env file to store sensitive information like your API key (if applicable).
 
 4. **Run the Application**:
 
-- **Start the Flask application**: python app.py
+- **Start the Flask application**:
+  ```bash
+  python app.py
+  ```
 - Navigate to http://127.0.0.1:5000 in your web browser to access the application.
 
 ### Docker Setup
 
 - Build the Docker image:
-- **In the project directory, run**: docker build -t flask-currency-converter .
+- **In the project directory, run**:
+  ```bash
+  docker build -t flask-currency-converter .
+  ```
 - Run the Docker container
-- **Execute the following command to run the container**: docker run -d -p 5000:5000 flask-currency-converter
+- **Execute the following command to run the container**:
+  ```bash
+  docker run -d -p 5000:5000 flask-currency-converter
+  ```
 - The application will be accessible at http://localhost:5000
 
 ## API Endpoints
