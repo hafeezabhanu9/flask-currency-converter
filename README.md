@@ -127,7 +127,6 @@ flask-currency-converter/
 
 ### Acknowledgements
 - ExchangeRate-API: For providing the currency conversion service.
-- Flask Documentation: For the guidance in building the application.
 
 ## License
 This project is licensed under the MIT License.
