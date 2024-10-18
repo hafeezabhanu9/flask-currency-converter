@@ -6,7 +6,6 @@ BASE_URL = f"https://v6.exchangerate-api.com/v6/062c909651716a27a5d7e547/latest/
 
 app = Flask(__name__)
 
-# Route for home page (with HTML and CSS)
 @app.route('/')
 def home():
     return '''
@@ -143,14 +142,12 @@ def home():
     </html>
     '''
 
-# Route for conversion logic
 @app.route('/convert')
 def convert_currency():
-    base = request.args.get('base', default='USD')  # Get base currency from the request
-    target = request.args.get('target', default='EUR')  # Get target currency from the request
-    amount = request.args.get('amount', type=float, default=1.0)  # Get amount to convert
+    base = request.args.get('base', default='USD')
+    target = request.args.get('target', default='EUR')
+    amount = request.args.get('amount', type=float, default=1.0)
 
-    # Construct the API URL for the request
     url = f'{BASE_URL}{base}'
     response = requests.get(url)
 
@@ -159,13 +156,11 @@ def convert_currency():
 
     data = response.json()
 
-    # Get the conversion rate for the target currency
     rate = data['conversion_rates'].get(target)
     
     if rate is None:
         return jsonify({"error": "Invalid target currency"}), 400
 
-    # Calculate the converted amount
     converted_amount = amount * rate
     
     return jsonify({
