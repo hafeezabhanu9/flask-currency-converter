@@ -123,6 +123,7 @@ flask-currency-converter/
 
 ## Author
 **Hafeeza Bhanu Mohmmad**
+**Lalam Divya Sri**
 
 ### Acknowledgements
 - ExchangeRate-API: For providing the currency conversion service.
