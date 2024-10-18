@@ -122,8 +122,8 @@ flask-currency-converter/
 └── README.md           # Project documentation
 
 ## Author
-**Hafeeza Bhanu Mohmmad**
-**Lalam Divya Sri**
+- **Hafeeza Bhanu Mohmmad**
+- **Lalam Divya Sri**
 
 ### Acknowledgements
 - ExchangeRate-API: For providing the currency conversion service.
